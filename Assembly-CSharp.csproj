@@ -1,18 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{D22E5BF4-2C2C-5DBE-A28E-9AEB27A05C8F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +25,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,6 +34,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,37 +49,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AirWall.cs" />
-     <Compile Include="Assets\Scripts\BagMove.cs" />
-     <Compile Include="Assets\Scripts\BeginScript.cs" />
-     <Compile Include="Assets\Scripts\Bounce.cs" />
-     <Compile Include="Assets\Scripts\CameraMove.cs" />
-     <Compile Include="Assets\Scripts\CreateZombie.cs" />
-     <Compile Include="Assets\Scripts\EncounterZombie.cs" />
-     <Compile Include="Assets\Scripts\Gravity.cs" />
-     <Compile Include="Assets\Scripts\HelicptorFollow.cs" />
-     <Compile Include="Assets\Scripts\KillZombie.cs" />
-     <Compile Include="Assets\Scripts\PauseCanvas.cs" />
-     <Compile Include="Assets\Scripts\PauseScript.cs" />
-     <Compile Include="Assets\Scripts\StartScene.cs" />
-     <Compile Include="Assets\Scripts\StartSceneHeli.cs" />
-     <Compile Include="Assets\Scripts\TubeMove.cs" />
-     <Compile Include="Assets\Scripts\VacuumMove.cs" />
-     <Compile Include="Assets\Scripts\ZombieMove.cs" />
-     <Compile Include="Assets\Scripts\game.cs" />
-     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
-     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
- <Reference Include="UnityEngine.UI">
- <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Scripts\AirWall.cs" />
+    <Compile Include="Assets\Scripts\BagMove.cs" />
+    <Compile Include="Assets\Scripts\BeginScript.cs" />
+    <Compile Include="Assets\Scripts\Bounce.cs" />
+    <Compile Include="Assets\Scripts\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\CreateZombie.cs" />
+    <Compile Include="Assets\Scripts\EncounterZombie.cs" />
+    <Compile Include="Assets\Scripts\Gravity.cs" />
+    <Compile Include="Assets\Scripts\HelicptorFollow.cs" />
+    <Compile Include="Assets\Scripts\KillZombie.cs" />
+    <Compile Include="Assets\Scripts\PauseCanvas.cs" />
+    <Compile Include="Assets\Scripts\PauseScript.cs" />
+    <Compile Include="Assets\Scripts\StartScene.cs" />
+    <Compile Include="Assets\Scripts\StartSceneHeli.cs" />
+    <Compile Include="Assets\Scripts\TubeMove.cs" />
+    <Compile Include="Assets\Scripts\VacuumMove.cs" />
+    <Compile Include="Assets\Scripts\ZombieMove.cs" />
+    <Compile Include="Assets\Scripts\game.cs" />
+    <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{F491525B-80F8-F001-E87B-9CD2DEBF1D6D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{F491525B-80F8-F001-E87B-9CD2DEBF1D6D}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -85,5 +91,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

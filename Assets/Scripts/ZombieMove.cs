@@ -21,16 +21,17 @@ public class ZombieMove : MonoBehaviour {
 
 	void Update () {
 
-        if (canMove)
+        if (canMove) //capturing zombie
         {
             transform.Translate(new Vector3(speed, 0.0f, 0.0f));
             if (towardsRight != flag)
             {
-                speed = -speed;
+                transform.Rotate(new Vector3(0, 180.0f, 0));
+                //speed = -speed;
                 flag = !flag;
             }
         }
-        else
+        else //end capturing zombie
         {
             Vector2 vel = GetComponent<Rigidbody2D>().velocity;
             if (Camera.main.GetComponent<game>().canAttack)
